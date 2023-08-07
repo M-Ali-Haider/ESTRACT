@@ -1,62 +1,74 @@
 .menu-bar{
     background-color: #2A2E57;
-    display: flex;
-    flex-direction: column;
-    color: #FFF;
-    font-family: SCHABO;
-    font-size: 1.65vw;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 14.95px;
-    justify-content: center;
-    font-weight: 500;
     position: fixed;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width:30%;
     z-index: 100000;
-    padding-right: 0;
-    padding-left: -10px;
     display: none;
+    font-family: schabo;
+    color: white;
 }
 .menu-bar.active {
     display: flex; 
-}
-.menu-bar-unit{
-    display: flex;
-    padding: 27.5px;
-    padding-right: 0;
-}
-.menu-bar-uniter{
-    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-.menu-bar-uniter div{
-    padding: 30px;
+.menu-bar-unit{
+    position: relative;
+    min-height:2.5vw;
+    font-size:3vw;
+    letter-spacing: 0.5vw;
+    flex: 1;
 }
-.darkblue-border-top{
-    border-top: 1px solid #0A0044;
-}
-.darkblue-border-right{
-    border-right: 1px solid #0A0044;
-}
-.close-buttoner{
+.pp{
+    display: flex;
+    padding-left:3vw;
     align-items: center;
-    justify-content: end;
+    border-top: 0.15vw solid #0A0044;
+}
+.special-pp{
+    border-bottom: 0.15vw solid #0A0044;
+}
+.specialer-pp{
+    border-right: 0.15vw solid #0A0044;
+}
+.pp-pp{
+    display: flex;
+    align-items: center;
+}
+.pp-pp-er{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.close-button{
+    display: flex;
+    justify-content:end;
+    align-items: center;
 }
 .close-button img{
-    width:65%;
-    height:65%;
-}
-.menu-clickable{
+    width: 4vw;
+    height: 4vw;
     cursor: pointer;
 }
+
 @media (max-width:500px){
     .menu-bar{
-        font-size: 4.75vw;
-        top: 0%;
-        right: 0%;
-        bottom: 0%;
-        left: 0%;
+        width: 100%;
+    }
+    .menu-bar-unit{
+        font-size:7.5vw;
+    }
+    .close-button img{
+        width: 12.5vw;
+        height: 12.5vw;
+    }
+    .pp{
+        padding-left: 10vw;
     }
 }
