@@ -9,7 +9,7 @@ main{
     top: 10vh;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap:5vw;
 }
 .first-div{
     display: flex;
@@ -150,8 +150,4 @@ main{
     .article-window-bottom{
         padding: 5px;
     }
-    main{
-        gap: 10px;
-    }
-
 }
