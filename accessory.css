@@ -1,11 +1,11 @@
 .box-blue{
-    background-color: #03009D;
+    background-color: #0034B9;
 }
 .box-orange{
-    background-color: #D2672C;
+    background-color: #EC5400;
 }
 .box-red{
-    background-color: #971717;
+    background-color: #CE0707;
 }
 .bar-lightblue{
     background: linear-gradient(90deg, #0FF 0%, rgba(48, 46, 19, 0.19) 54.48%, rgba(0, 3, 5, 0.00) 100%);
@@ -29,7 +29,7 @@
     background: linear-gradient(90deg, #2C28F6 0%, rgba(0, 0, 0, 0.00) 80.00%);
 }
 .button-blue{
-    background-color: #2C28F6;
+    background-color: #0019FF;
 }
 .button-red{
     background-color: #FF0000;
