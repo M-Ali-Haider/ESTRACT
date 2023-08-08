@@ -4,3 +4,7 @@ body{
     background-size: cover;
      overflow-x: hidden;
 }
+.menu-open {
+    overflow: hidden;
+  }
+    
