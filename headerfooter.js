@@ -6,25 +6,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function openMenuBar() {
         isOpen = true;
+        document.body.classList.add('menu-open'); 
     }
 
     function closeMenuBar() {
         isOpen = false;
+        document.body.classList.remove('menu-open'); 
     }
 
     burgerMenu.addEventListener('click', function () {
         if (!isOpen) {
-                menuBar.classList.add('active');
-                openMenuBar();
+            menuBar.classList.add('active');
+            openMenuBar();
         }
     });
+
     closeButton.addEventListener('click', function () {
         if (isOpen) {
             closeMenuBar();
             menuBar.classList.remove('active');
         }
     });
+
+    document.addEventListener('click', function (event) {
+        if (isOpen && !menuBar.contains(event.target) && !burgerMenu.contains(event.target)) {
+            closeMenuBar();
+            menuBar.classList.remove('active');
+        }
+    });
 });
+
 function updateTotalHeightVariable() {
     const totalHeight = document.body.scrollHeight+20;
     document.documentElement.style.setProperty("--total-height", totalHeight + "px");
