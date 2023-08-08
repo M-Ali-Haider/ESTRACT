@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper("#swiper1", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -18,6 +18,21 @@ var swiper = new Swiper(".swiper", {
     clickable: true
     },
 });
+var swiper2 = new Swiper("#swiper2", {
+    slidesPerView: 2.5,
+    spaceBetween: 45,
+    breakpoints: {
+        500: {
+          spaceBetween: 10,
+        },
+        400: {
+          spaceBetween: 10,
+        },
+        1000:{
+            spaceBetween:45,
+        }
+      },
+  });
 swiper.on('slideChange', function () {
 document.querySelectorAll('.swiper-pagination-bullet').forEach(function (bullet) {
     bullet.classList.remove('swiper-pagination-bullet-active');
