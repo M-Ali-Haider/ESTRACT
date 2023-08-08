@@ -9,7 +9,7 @@ main{
     top: 10vh;
     display: flex;
     flex-direction: column;
-    gap:5vw;
+    gap:3.5vw;
     overflow-x:hidden;
 }
 .first-div{
@@ -93,62 +93,4 @@ main{
     width: 100%;
     gap: 15px;
 }
-.article-window{
-    flex: 1;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 31px;
-    overflow: hidden;
-}
-.article-window-top{
-    height: 60%;
-    border-radius: 31px;
-    overflow: hidden;
-}
-.article-window-top img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-.article-window-bottom{
-    height: 40%;
-    color: #FFF;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160.523%;
-    letter-spacing: 1px;
-    font-size: 1.3vw;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:20px;
-    padding-left: 40px;
-    text-overflow: ellipsis;
-}
-@media (max-width:550px){
-    .first-right-unit{
-        padding:10px;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-    .first-right-box{
-        padding:15px;
-    }
-    .article-window{
-        min-height: 100px;
-        max-height: 200px;
-        border-radius: 10px;
-    }
-    .article-window-top{
-        border-radius: 10px;
-    }
-    .article-window-bottom{
-        padding: 5px;
-    }
-}
+
