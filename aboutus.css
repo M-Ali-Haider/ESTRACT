@@ -7,23 +7,24 @@ main{
     top: 15vh;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 4vw;
     min-height: 100%;
 }
 .about-us-container-unit{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4vw;
 }
 .about-us-container{
     font-family: inter;
     color: white;
-    font-size: 1.6vw;
-    max-width: 50vw;
+    font-size: 2vw;
+    max-width: 66vw;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 40px;
+    gap: 4vw;
+    padding-left: 2vw;
+    padding-bottom: 100vw;
 }
 .about-us-heading{
     font-size: 4.25vw;
@@ -38,20 +39,7 @@ main{
     z-index: -1;
 }
 @media (max-width:500px){
-    main{
-        gap: 30px;
-    }
-    .about-us-container-unit{
-        gap: 15px;
-    }
     .about-us-container{
-        gap: 15px;
-        max-width: 250px;
-        padding: 5px;
-        padding-bottom: 450px;
-    }
-    footer{
-        padding-left:5px;
-        padding-right: 5px;
+        padding-left: 1vw;
     }
 }
