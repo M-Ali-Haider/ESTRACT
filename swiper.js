@@ -21,12 +21,12 @@ var swiper = new Swiper("#swiper1", {
 var swiper2 = new Swiper("#swiper2", {
     slidesPerView: 2.5,
     spaceBetween: 45,
-    breakpoints: {
-        500: {
+   breakpoints: {
+        10: {
           spaceBetween: 10,
         },
-        400: {
-          spaceBetween: 10,
+        500:{
+            spaceBetween:15,
         },
         1000:{
             spaceBetween:45,
