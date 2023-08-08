@@ -10,7 +10,6 @@ main{
     display: flex;
     flex-direction: column;
     gap:5vw;
-    overflow:hidden;
 }
 .first-div{
     display: flex;
