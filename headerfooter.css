@@ -47,6 +47,7 @@ header img{
     font-size: 2.5vw;
     font-family: hanson;
     color: white;
+    cursor: pointer;
 
 }
 footer img{
@@ -96,5 +97,4 @@ footer img{
     .burger-icon{
         height: 0.1vw;
     }
-
 }
