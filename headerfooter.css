@@ -13,7 +13,6 @@ header{
     justify-content:space-between;
     z-index: 100;
     padding:1.5vw;
-    border: 1px solid pink;
 }
 footer{
     position:absolute;
@@ -23,7 +22,6 @@ footer{
     background-color:#0B0B0B;
     padding: 2vw;
     padding-bottom: 3vw;
-    border: 1px solid pink;
 }
 header img{
     height: 2.25vw;
