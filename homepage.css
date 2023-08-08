@@ -52,7 +52,7 @@ main{
     color: #daf470;
     font-size: 7vw;
     font-family: schabo;
-    text-shadow: 5px 5px 0 #ff0000;
+    text-shadow: 0.3vw 0.3vw 0 #ff0000;
 }
 
 .first-right-box{
