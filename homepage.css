@@ -28,7 +28,7 @@ main{
     left: -2%;
     bottom: 0;
     font-family: Hanson;
-    text-shadow: 5px 5px 0 #ff0000;
+    text-shadow: 0.3vw 0.3vw 0 #ff0000;
     letter-spacing: 0.005em;
     text-transform: uppercase;
     line-height: 158.52%;
