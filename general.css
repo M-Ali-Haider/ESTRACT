@@ -105,6 +105,143 @@
 .no-footer{
     color: grey;
 }
+.sign-in-container{
+    width: 37.5vw;
+    height: 32.5vw;
+    background-color: #0b0b0b;
+    z-index: 1000000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    padding: 0 1vw;
+    padding-right: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.log-in-container{
+    width: 37.5vw;
+    height: 27vw;
+    background-color: #0b0b0b;
+    z-index: 1000000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    padding: 0 1vw;
+    padding-right: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.sign-in-container-helper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+@media (min-width:551px){
+    .stripes-logsign2{
+        display: none;
+    }
+    .stripes-logsign{
+        width: 20%;
+        display: flex;
+        gap: 0.5vw;
+    }
+    .close-sign-in{
+        position: absolute;
+        right:0.5%;
+        top: 0.5%;
+        cursor: pointer;
+    }
+    .close-sign-in img{
+        width: 3vw;
+        height: 3vw;
+    }
+    .logsign-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .logsign-heading{
+        display: flex;
+        align-items: center;
+        border-bottom: 0.25vw solid white;
+        padding: 1.5vw 0;
+    }
+    .logsign-heading img{
+        height: 2vw;
+        padding-left: 1.5vw;
+    }
+    .logsign-final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        padding: 2vw 0vw;
+        padding-bottom: 0.5vw;
+    }
+    .logsign-label{
+        font-family: schabo;
+        color: white;
+        font-size: 1.75vw;
+    }
+    .logsign-final-unit{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+        width: 80%;
+    }
+    .logsign-final-unit input{
+        width: 90%;
+        border-radius:10px;
+        border: none;
+        padding: 1vw 1vw;
+    }
+    .logsign-pp{
+        height: 50%;
+        color: gray;
+        font-family: schabo;
+        font-size: 1.45vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logsign-activator{
+        pointer-events: all;
+        opacity: 1;
+    }
+    .log-in-container-helper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .close-log-in{
+        position: absolute;
+        right:0.5%;
+        top: 0.5%;
+        cursor: pointer;
+    }
+    .close-log-in img{
+        width: 3vw;
+        height: 3vw;
+    }
+    .logsign-unit-helper{
+        position: relative;
+    }
+    .logsign-fp{
+        position: absolute;
+        color: gray;
+        font-family: schabo;
+        font-size: 1.35vw;
+        bottom: -37.5%;
+    }
+}
 @media (max-width:550px){
     .main-thing-buttoner{
         padding: 15px;
@@ -120,5 +257,145 @@
     }
     .title-helper-heading{
         gap: 7px;
+    }
+    .sign-in-container{
+        width:100%;
+        height:100%;
+        z-index: 1000000;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        transform: translate(0%,0%);
+        padding: 0 0;
+    }
+    .log-in-container{
+        width:100%;
+        height:100%;
+        z-index: 1000000;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        transform: translate(0%,0%);
+        padding: 0 0;
+    }
+    .sign-in-container-helper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .log-in-container-helper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .stripes-logsign{
+        display: none;
+    }
+    .stripes-logsign2{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+    }
+    .stripes-logsign2 img{
+        height: 5vw;
+    }
+    .close-sign-in{
+        position: absolute;
+        right:2%;
+        top: 2%;
+        cursor: pointer;
+    }
+    .close-sign-in img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .logsign-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .logsign-heading{
+        display: flex;
+        align-items: center;
+        border-bottom: 0.25vw solid white;
+        padding: 4vw 0;
+    }
+    .logsign-heading img{
+        height: 5vw;
+        padding-left: 5vw;
+    }
+    .logsign-final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        padding: 5vw 5vw;
+        padding-bottom: 5vw;
+    }
+    .logsign-label{
+        font-family: schabo;
+        color: white;
+        font-size: 4.5vw;
+    }
+    .logsign-final-unit{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        width: 80%;
+    }
+    .logsign-final-unit input{
+        width: 90%;
+        border-radius:15px;
+        border: none;
+        padding: 2.5vw 1vw;
+    }
+    .logsign-pp{
+        height: 50%;
+        color: gray;
+        font-family: schabo;
+        font-size:4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4vw;
+    }
+    .logsign-activator{
+        pointer-events: all;
+        opacity: 1;
+    }
+    .log-in-container-helper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .close-log-in{
+        position: absolute;
+        right:0.5%;
+        top: 0.5%;
+        cursor: pointer;
+    }
+    .close-log-in img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .logsign-unit-helper{
+        position: relative;
+    }
+    .logsign-fp{
+        position: absolute;
+        color: gray;
+        font-family: schabo;
+        font-size:4vw;
+        bottom: -40%;
+    }
+    .extra-bottom{
+        padding-bottom: 10vw;
+        padding-top: 5vw;
     }
 }
