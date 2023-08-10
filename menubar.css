@@ -61,7 +61,9 @@
     height: 3.5vw;
     cursor: pointer;
 }
-
+.menu-clickable{
+    cursor: pointer;
+}
 @media (max-width:500px){
     .menu-bar{
         width: 100%;
